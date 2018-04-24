@@ -39,6 +39,3 @@ If you're using a different boilerplate or your own setup - you're on your own!
 - [Create React App](https://github.com/facebook/create-react-app)
 - [GitHub API Getting Started](https://developer.github.com/v3/guides/getting-started/)
 - [GitHub API User docs](https://developer.github.com/v3/users/)
-
-## Final result
-Feel free to add any creative flair you with, but an example of the final result can be seen at [xxxxx]()
