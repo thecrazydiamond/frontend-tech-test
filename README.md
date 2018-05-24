@@ -18,7 +18,7 @@ At Immersive Labs we use the following tech stack:
 - [ImmutableJS](https://facebook.github.io/immutable-js/)
 You are welcome to use any of these you wish, or completely different technologies, but be prepared to discuss your decision
 
-The `src/theme.js` file contains some useful variables and colours you may with to use.
+The `src/theme.js` file contains some useful variables and colours you may wish to use.
 
 ## Time limit
 Please try and limit yourself to two hours on this test. We want to see what you can do in a short period of time and what you are comfortable with. We are not looking to see how many hours you are willing to put in.
