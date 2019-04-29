@@ -3,10 +3,16 @@
 This is the starter project for the Immersive Labs frontend technical test.
 
 ## Objective
-Use the GitHub API to retrieve the public information about a user and display card based on the returned data. You can use your own username if you have one, or our Lead Frontend Developer's username `planetflash`.
+- Use the GitHub API to retrieve the public information about a user
+- Display a profile card based on the returned data. This should user image and a summary of data retrieved.
+- You can use your own username if you have one, or make it user searchable.
+- You need not be a design guru, but we do love attention to detail, so some layout, basic styling and user considerations will all be looked favourably upon
+
+## Enhancements
+You are very welcome to enhance this functionality and make it as impressive and interactive as you like, but please do not exceed the time limit (2 hours, detailed below). Ideas for future enhancements can be discussed during the interview stage if not implemented during the test - we'd love to hear your ideas!
 
 ## Tech
-This project comes with Crate React App, but you are free to use any boilerplate you wish or to start from scratch.
+This project comes with Create React App, but you are free to use any boilerplate you wish or to start from scratch.
 
 At Immersive Labs we use the following tech stack:
 - [React.js](https://facebook.github.io/react/)
@@ -15,10 +21,10 @@ At Immersive Labs we use the following tech stack:
 - [React Boilerplate](https://github.com/react-boilerplate/react-boilerplate)
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [Jest](https://facebook.github.io/jest/)
-- [ImmutableJS](https://facebook.github.io/immutable-js/)
-You are welcome to use any of these you wish, or completely different technologies, but be prepared to discuss your decision
+- [Enzyme](https://airbnb.io/enzyme/)
+You are welcome to use any of these you wish, or completely different technologies, but be prepared to discuss your decision.
 
-The `src/theme.js` file contains some useful variables and colours you may wish to use.
+The `src/theme.js` file contains some useful variables and colours you may wish to use if you are working with css-in-js.
 
 ## Time limit
 Please try and limit yourself to two hours on this test. We want to see what you can do in a short period of time and what you are comfortable with. We are not looking to see how many hours you are willing to put in.
