@@ -8,6 +8,11 @@ This is the starter project for the Immersive Labs frontend technical test.
 - You can use your own username if you have one, or make it user searchable.
 - You need not be a design guru, but we do love attention to detail, so some layout, basic styling and user considerations will all be looked favourably upon
 
+## Advanced
+These are not part of the key requirements, but if they are too straightforward for you, or you just fancy showing off, here are some ideas for advanced features:
+- Caching of results: The API is rate limited, if the lookup did not re-occur for a user whose data we've already retrieved this would improve user experience as well as reduce the number of lookups required
+- User Search: Allowing the user to search for a username rather than it being predefined will be a better user experience. Bonus points for making the search predictive.
+
 ## Enhancements
 You are very welcome to enhance this functionality and make it as impressive and interactive as you like, but please do not exceed the time limit (2 hours, detailed below). Ideas for future enhancements can be discussed during the interview stage if not implemented during the test - we'd love to hear your ideas!
 
@@ -18,7 +23,6 @@ At Immersive Labs we use the following tech stack:
 - [React.js](https://facebook.github.io/react/)
 - [Redux](http://redux.js.org/)
 - [Redux Saga](https://redux-saga.js.org/)
-- [React Boilerplate](https://github.com/react-boilerplate/react-boilerplate)
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [Jest](https://facebook.github.io/jest/)
 - [Enzyme](https://airbnb.io/enzyme/)
