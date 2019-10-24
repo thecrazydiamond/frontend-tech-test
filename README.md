@@ -6,7 +6,7 @@ This is the starter project for the Immersive Labs frontend technical test.
 - Use the GitHub API to retrieve the public information about a user
 - Display a profile card based on the returned data. This should user image and a summary of data retrieved.
 - You can use your own username if you have one, or make it user searchable.
-- You need not be a design guru, but we do love attention to detail, so some layout, basic styling and user considerations will all be looked favourably upon
+- You need not be a design guru, but we do love attention to detail, so some layout, basic styling and user considerations will all be looked favourably upon.
 
 ## Advanced
 These are not part of the key requirements, but if they are too straightforward for you, or you just fancy showing off, here are some ideas for advanced features:
@@ -26,6 +26,9 @@ At Immersive Labs we use the following tech stack:
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [Jest](https://facebook.github.io/jest/)
 - [Enzyme](https://airbnb.io/enzyme/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [GraphQL](https://graphql.org/)
+- [Apollo](https://www.apollographql.com/)
 You are welcome to use any of these you wish, or completely different technologies, but be prepared to discuss your decision.
 
 The `src/theme.js` file contains some useful variables and colours you may wish to use if you are working with css-in-js.
