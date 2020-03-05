@@ -51,7 +51,7 @@ If you run out of time but there are other things you would have liked to implem
 
 ## Submission
 
-You can zip up your files and email them to [paul.thomas@immersivelabs.co.uk](mailto:paul.thomas@immersivelabs.co.uk) or submit via GitHub using a forked version of the repository and creating a pull request.
+Please zip up your files and return them to us by replying to the email you were sent.
 
 ## Getting started
 
