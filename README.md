@@ -15,7 +15,7 @@ This is the starter project for the Immersive Labs frontend technical test.
 - The app should include a search field to search the list by the name of the user.
 - The app should fetch the data from the server using either REST or GraphQL.
 - You should write tests for the basic functionality of the app.
-
+- We'd like to see a git commit history to understand the steps you took along the way
 ## Advanced
 
 These are not part of the key requirements, but if they are too straightforward for you, or you just fancy showing off, here are some ideas for advanced features:
