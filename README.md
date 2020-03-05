@@ -25,7 +25,7 @@ These are not part of the key requirements, but if they are too straightforward 
 
 ## Enhancements
 
-You are very welcome to enhance this functionality and make it as impressive and interactive as you like, but please do not exceed the time limit (2 hours, detailed below). 
+You are very welcome to enhance this functionality and make it as impressive and interactive as you like, but please do not exceed the time limit (3 hours, detailed below). 
 
 Ideas for future enhancements should be added to the readme.md and can be discussed during the interview stage - we'd love to hear your ideas!
 
@@ -47,7 +47,7 @@ The project is pre-configured to allow use of these packages. You may use any of
 
 ## Time Limit
 
-Please try and limit yourself to two hours on this test. We want to see what you can do in a short period of time and what you are comfortable with. We are not looking to see how many hours you are willing to put in.
+Please try and limit yourself to three hours on this test. We want to see what you can do in a short period of time and what you are comfortable with. We are not looking to see how many hours you are willing to put in.
 
 If you run out of time but there are other things you would have liked to implement, make a note of these to discuss with us, or let us know via the `readme.md` of your project.
 
