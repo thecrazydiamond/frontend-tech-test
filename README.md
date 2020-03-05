@@ -25,7 +25,9 @@ These are not part of the key requirements, but if they are too straightforward 
 
 ## Enhancements
 
-You are very welcome to enhance this functionality and make it as impressive and interactive as you like, but please do not exceed the time limit (2 hours, detailed below). Ideas for future enhancements can be discussed during the interview stage if not implemented during the test - we'd love to hear your ideas!
+You are very welcome to enhance this functionality and make it as impressive and interactive as you like, but please do not exceed the time limit (2 hours, detailed below). 
+
+Ideas for future enhancements should be added to the readme.md and can be discussed during the interview stage - we'd love to hear your ideas!
 
 ## Tech
 
