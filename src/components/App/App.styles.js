@@ -13,7 +13,7 @@ outline: none;
 `;
 
 export const AppContainer = styled.div`
-  background-image: linear-gradient(darkcyan, lightcyan);
+  background-image: linear-gradient(rgba(49, 151, 195, 1), rgba(45, 140, 179, 1));
   width: 100%;
 `;
 
