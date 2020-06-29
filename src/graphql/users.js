@@ -8,12 +8,3 @@ export const LIST_ALL_USERS = gql`
     }
   }
 `;
-
-export const LIST_USERS_BY_NAME = gql`
-  query listUsersbyName($searchQuery: String) {
-    users(filter: { name: { eq: searchQuery }} {
-      name
-      avatar
-    })
-  }
-`;
