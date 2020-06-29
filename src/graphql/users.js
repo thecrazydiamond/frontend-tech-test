@@ -1,17 +1,19 @@
-import ApolloClient, { gql } from 'apollo-boost';
+import { gql } from 'graphql-tag';
 
-const client = new ApolloClient({
-  uri: 'http://localhost:3001/graphql',
-});
+export const LIST_ALL_USERS = gql`
+  query listUsers {
+    users {
+      name
+      avatar
+    }
+  }
+`;
 
-client
-  .query({
-    query: gql`
-      {
-        users {
-          name
-        }
-      }
-    `,
-  })
-  .then((result) => console.log(result));
+export const LIST_USERS_BY_NAME = gql`
+  query listUsersbyName($searchQuery: String) {
+    users(filter: { name: { eq: searchQuery }} {
+      name
+      avatar
+    })
+  }
+`;
