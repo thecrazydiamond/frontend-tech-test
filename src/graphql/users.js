@@ -1,4 +1,4 @@
-import { gql } from 'graphql-tag';
+import gql from 'graphql-tag';
 
 export const LIST_ALL_USERS = gql`
   query listUsers {
@@ -14,8 +14,8 @@ export const LIST_ALL_USERS = gql`
 `;
 
 export const LIST_USERS_BY_NAME = gql`
-  query listUsersbyName($searchQuery: String) {
-    users($searchQuery) {
+  query listUsersbyName($name: String) {
+    users(name: $name) {
       name
       avatar
       email
