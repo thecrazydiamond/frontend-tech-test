@@ -5,6 +5,23 @@ export const LIST_ALL_USERS = gql`
     users {
       name
       avatar
+      email
+      joined
+      bio
+      location
+    }
+  }
+`;
+
+export const LIST_USERS_BY_NAME = gql`
+  query listUsersbyName($searchQuery: String) {
+    users($searchQuery) {
+      name
+      avatar
+      email
+      joined
+      bio
+      location
     }
   }
 `;
