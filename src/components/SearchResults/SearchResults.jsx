@@ -9,13 +9,15 @@ import {
 } from './SearchResults.styles';
 
 const SearchResults = ({ query, onUserClick }) => {
+  const formattedQuery = React.useMemo(() => query.toLowerCase(), [query]);
+
   const { loading, error, data } = useQuery(
-    query
+    formattedQuery
       ? LIST_USERS_BY_NAME
       : LIST_ALL_USERS,
     {
       variables: {
-        searchQuery: query,
+        name: formattedQuery,
       },
     },
   );
