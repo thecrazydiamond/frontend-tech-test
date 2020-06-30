@@ -35,15 +35,19 @@ const SearchResults = ({ query, onUserClick }) => {
               <UserRow
                 key={`user-${user.name}`}
                 style={{ width: '100%', marginTop: '10px' }}
-                onClick={() => onUserClick(user)}
               >
                 <AvatarColumn>
                   <Avatar
+                    onClick={() => onUserClick(user)}
                     src={user.avatar}
                     alt="User avatar"
                   />
                 </AvatarColumn>
-                <NameColumn>{user.name}</NameColumn>
+                <NameColumn
+                  onClick={() => onUserClick(user)}
+                >
+                  {user.name}
+                </NameColumn>
               </UserRow>
             ))}
           </UserTable>

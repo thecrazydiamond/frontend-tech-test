@@ -2,7 +2,9 @@ import React from 'react';
 import debounce from 'lodash/debounce';
 
 import {
-  AppContainer, SearchResultContainer, SearchInput, UserCard, UserCardContainer,
+  AppContainer, SearchResultContainer, SearchInput, UserCard,
+  UserCardContainer, UserCardAvatar, UserCardSection,
+  UserCardName, UserCardTable, UserCardText,
 } from './App.styles';
 import SearchResults from '../SearchResults';
 
@@ -21,24 +23,33 @@ const App = () => {
   return (
     <AppContainer>
       {!!selectedUser && (
-        <UserCardContainer
-          onClick={() => setSelectedUser(null)}
-        >
+        <UserCardContainer>
           <UserCard>
-            <div>
-              <button
-                type="button"
-                onClick={() => setSelectedUser(null)}
-              >
-                Close
-              </button>
-              <div>
-                {selectedUser.name}
-              </div>
-            </div>
-            <div>
-              {selectedUser.avatar}
-            </div>
+            <UserCardTable>
+              <UserCardSection>
+                <button
+                  type="button"
+                  onClick={() => setSelectedUser(null)}
+                >
+                  Close
+                </button>
+                <UserCardAvatar>
+                  <img
+                    src={selectedUser.avatar}
+                    alt="User avatar"
+                  />
+                </UserCardAvatar>
+                <UserCardName>
+                  {selectedUser.name}
+                </UserCardName>
+              </UserCardSection>
+              <UserCardSection>
+                <UserCardText>{selectedUser.bio}</UserCardText>
+                <UserCardText>{selectedUser.email}</UserCardText>
+                <UserCardText>{selectedUser.joined}</UserCardText>
+                <UserCardText>{selectedUser.location}</UserCardText>
+              </UserCardSection>
+            </UserCardTable>
           </UserCard>
         </UserCardContainer>
       )}
