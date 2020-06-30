@@ -1,11 +1,14 @@
 import React from 'react';
 import debounce from 'lodash/debounce';
 
-import { AppContainer, SearchResultContainer, SearchInput } from './App.styles';
+import {
+  AppContainer, SearchResultContainer, SearchInput, UserCard, UserCardContainer,
+} from './App.styles';
 import SearchResults from '../SearchResults';
 
 const App = () => {
   const [searchQuery, setSearchQuery] = React.useState('');
+  const [selectedUser, setSelectedUser] = React.useState('');
 
   const handleFilter = React.useMemo(() => debounce((val) => {
     setSearchQuery(val);
@@ -17,6 +20,28 @@ const App = () => {
 
   return (
     <AppContainer>
+      {!!selectedUser && (
+        <UserCardContainer
+          onClick={() => setSelectedUser(null)}
+        >
+          <UserCard>
+            <div>
+              <button
+                type="button"
+                onClick={() => setSelectedUser(null)}
+              >
+                Close
+              </button>
+              <div>
+                {selectedUser.name}
+              </div>
+            </div>
+            <div>
+              {selectedUser.avatar}
+            </div>
+          </UserCard>
+        </UserCardContainer>
+      )}
       <SearchInput
         type="text"
         placeholder="Name"
@@ -25,7 +50,7 @@ const App = () => {
         onChange={onChange}
       />
       <SearchResultContainer>
-        <SearchResults query={searchQuery} onUserClick={null} />
+        <SearchResults query={searchQuery} onUserClick={setSelectedUser} />
       </SearchResultContainer>
     </AppContainer>
   );
