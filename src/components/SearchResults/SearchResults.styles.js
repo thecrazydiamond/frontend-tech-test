@@ -18,3 +18,7 @@ export const NameColumn = styled.td`
   width: 60%;
   text-align: left;
 `;
+
+export const Avatar = styled.img`
+  border-radius: 50%;
+`;

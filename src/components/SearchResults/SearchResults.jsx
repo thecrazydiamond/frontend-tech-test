@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { useQuery } from '@apollo/react-hooks';
 
 import { LIST_ALL_USERS, LIST_USERS_BY_NAME } from '../../graphql/users';
+
 import {
-  UserTable, UserRow, AvatarColumn, NameColumn,
+  UserTable, UserRow, AvatarColumn, NameColumn, Avatar,
 } from './SearchResults.styles';
 
 const SearchResults = ({ query, onUserClick }) => {
@@ -35,7 +36,10 @@ const SearchResults = ({ query, onUserClick }) => {
                 onClick={() => onUserClick(user)}
               >
                 <AvatarColumn>
-                  {user.avatar}
+                  <Avatar
+                    src={user.avatar}
+                    alt="User avatar"
+                  />
                 </AvatarColumn>
                 <NameColumn>{user.name}</NameColumn>
               </UserRow>
